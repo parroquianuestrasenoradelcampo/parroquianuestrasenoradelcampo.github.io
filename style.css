@@ -175,3 +175,19 @@ footer {
     width: 300px;
     height: 400px;
 }
+
+
+
+
+
+
+.video-parroquia {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contenedor-video iframe {
+    border-radius: 15px;
+    border: none;
+    max-width: 100%;
+}
