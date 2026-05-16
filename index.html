@@ -72,7 +72,16 @@
 
 </section>
 
- 
+     <!-- SECCIÓN DEL VIDEO -->
+
+    <section class="video-parroquia">
+
+        <h2>Video de la Parroquia</h2>
+
+        <div id="contenedor-video"></div>
+
+    </section>
+        
 </main>
 
 <footer>
@@ -81,5 +90,37 @@
     <p>Usaquén, Bogotá</p>
 </footer>
 
+
+
+<!-- SCRIPT TERABOX -->
+
+<script>
+
+const enlaceTerabox =
+"https://1024terabox.com/s/12FNamH5vPTgzR-9BC6NoAQ";
+
+function cargarVideoTerabox(link) {
+
+    const contenedor = document.getElementById("contenedor-video");
+
+    const reproductor =
+        `https://playertv.online/terabox-player?url=${encodeURIComponent(link)}`;
+
+    contenedor.innerHTML = `
+        <iframe
+            src="${reproductor}"
+            width="700"
+            height="400"
+            frameborder="0"
+            allowfullscreen
+            allow="autoplay">
+        </iframe>
+    `;
+}
+
+cargarVideoTerabox(enlaceTerabox);
+
+</script>
+    
 </body>
 </html>
